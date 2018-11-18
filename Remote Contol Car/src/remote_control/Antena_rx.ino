@@ -35,16 +35,13 @@ void loop()
 
         vx = data[0]; //Axis x information (wheels orientation)
         vy = data[2]; //Axis y information (wheels polarity)
-        //Serial.println(vx);
-        //Serial.println(vy);
-        //Serial.println("----");
 
     }
 
     movement_robot[0] = map(vx, 0, 250, 45, 135); //Save the degrees that will move the servomotor
     
     if(vy > 130){
-      movement_robot[1] = 1; // 1 if motors have to go forward, and 0 if motors have to go backward
+      movement_robot[1] = 1; // 1 if motors have to go forward, and -1 if motors have to go backward
     }else if(vy < 120){
       movement_robot[1] = -1;
        
