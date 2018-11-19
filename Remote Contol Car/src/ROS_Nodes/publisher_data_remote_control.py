@@ -12,7 +12,7 @@ rospy.init_node('Publisher_Data_Remote_Control') #Start the ROS node
 pub1 =rospy.Publisher('/angle_servo', Int32, queue_size = 1)
 pub2 =rospy.Publisher('/polarity_motors', Int32, queue_size = 1)
 
-rate = rospy.Rate(500) #Frequency of 50 Hz
+rate = rospy.Rate(500) #Frequency of 500 Hz
 
 def num(cadena):
     n = 0
