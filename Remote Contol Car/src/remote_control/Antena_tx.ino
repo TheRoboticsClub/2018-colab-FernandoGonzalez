@@ -21,7 +21,7 @@ void loop() {
     //Read the Joysticks data
     dato[0] = map(analogRead(Vx), 0, 1024, 0, 255);
     dato[1] = map(analogRead(Vy), 0, 1024, 0, 255);
-    //Los imprimo por pantalla
+    //Print it by screen
     Serial.println(dato[0]);
     Serial.println(dato[1]);
     Serial.println("----");
