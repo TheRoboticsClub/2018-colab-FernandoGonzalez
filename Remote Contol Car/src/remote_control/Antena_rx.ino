@@ -11,7 +11,7 @@ void setup()
     Serial.println("setup");
 
     //Se inicializa el RF
-    vw_setup(2000);  //velocidad: Bits per segundo
+    vw_setup(2000);  //Speed: Bits per seccond
     vw_set_rx_pin(2);
     vw_rx_start();
     
