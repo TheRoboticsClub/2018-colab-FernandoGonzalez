@@ -18,7 +18,7 @@ Como actuadores, tenemos los motores del robot, los cuales nos permites tener un
 tanto lineal como angular
 
 ## Software
-El software de este robot se basa en un sistema reactivo con un control PD (proporcional derivativo).
+El software de este robot se basa en un sistema reactivo con un control proporcional.
 Al tratarse de un sistema reactivo, el programa principal de un bucle infinito cuya estructura básica consta de las
 siguientes fases:
 
@@ -52,7 +52,7 @@ existente. Este error no es más que la diferencia entre en centro del frame y e
 esta forma, el coche puede encontrarse desviado a la izquierda o a la derecha (esto se encargan de evaluarlo las funciones *desviadoIzquierda* y *desviadoDerecha*).
 
 Además, dentro de la implementación de la función *avanzar* se comtemplan los casos de que el robot se encuentre sobre
-una línea recta larga o esté inmerso en una curva, manejando así distintas distintas velocidades.
+una línea recta larga o esté inmerso en una curva, manejando así distintas velocidades.
 
 ## Apoyo Visual
 En el siguiente [Enlace](https://www.youtube.com/watch?v=B0__VtEqL5w&t=58s) se encuentra el vídeo del coche en funcionamiento.
