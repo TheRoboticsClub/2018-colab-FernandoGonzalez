@@ -3,6 +3,8 @@
 ## Objetivo de la Práctica
 El objetivo de esta práctica es conseguir que el kobuki se mueva siguiendo una línea blanca pintada en el suelo hasta completar el circuito
 
+![Imagen](https://www.turtlebot.com/assets/images/turtlebot2e.png)
+
 ## Hardware
 
 El hardware del robot utilizado para esta práctica se clasifica de la siguiente manera:
@@ -19,6 +21,8 @@ Como actuadores, en este caso disponemos de los motores que permiten moverse al 
 
 El software del que consta este ejercicio no es más que una adaptación del código utilizado para la plataforma simulada.
 
+Se ha utilizado un algoritmo reactivo PD (Proporcional Derivativo) para conseguir que el robot corrija su trayectoria de manera que la línea blanca siempre se encuentre en el centror de la imagen captada por la cámara.
+
 El cambio principal que ha sufrido han sido los valores HSV utilizados para realizar el filtro de la imagen, debido a que el
 color es diferente y también a que en un entorno real, los colores no son constantes sino que sufren variaciones debido a infinidad de factores físicos que en una simulación no están presentes, así como brillos, sombras, etc...
 
@@ -34,3 +38,4 @@ Para poder aplicar ambas operaciones simultáneamente se hace uno del método qu
 ```
 opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
 ```
+
