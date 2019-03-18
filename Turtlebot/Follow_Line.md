@@ -24,4 +24,4 @@ color es diferente y también a que en un entorno real, los colores no son const
 
 Es por esta razón que además de calibrar de la manera más rigurosa posible el filtro (de manera experimental), para aumentar la robustez del comportamiento del robot ha sido necesario realizar dos operaciones sobre la imagen una vez filtrada. Estas dos operaciones son *dilatar* y *erosionar*. Éstos son conceptos que explicaré a continuación:
 
-* **Dilatar: ** Partimos de una imagen 
+* **Dilatar:** Partimos de una imagen 
