@@ -24,4 +24,13 @@ color es diferente y también a que en un entorno real, los colores no son const
 
 Es por esta razón que además de calibrar de la manera más rigurosa posible el filtro (de manera experimental), para aumentar la robustez del comportamiento del robot ha sido necesario realizar dos operaciones sobre la imagen una vez filtrada. Estas dos operaciones son *dilatar* y *erosionar*. Éstos son conceptos que explicaré a continuación:
 
-* **Dilatar:** Partimos de una imagen 
+* **Dilatar:** Partimos de una imagen filtrada, es decir, una matriz de unos y ceros. El proceso de dilatació consiste en crear una nueva matriz cuadrada de las dimensiones que creamos oportunas. Esta matriz, denominada *kernel* se desliza por la matriz que forma la imagen y si al menos un pixel de los que caen dentro de ese kernel es un 1, todos se convertirán en 1. En caso contrario, seguirán siendo 0.
+
+* **Erosionar:** Es la operación contraria a la dilatación. Para conseguir un 1, todos los elementos que caigan dentro del kernel tendrán que estar a 1. Y lo mismo para el 0.
+
+Con estas dos operaciones ppodemos ser capaces de eliminar el ruido de forma significativa. 
+
+Para poder aplicar ambas operaciones simultáneamente se hace uno del método que OpenCV nos proporciona:
+```
+opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
+```
