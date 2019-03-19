@@ -41,4 +41,4 @@ opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
 
 ## Apoyo Visual
 
-En el siguiente [Enlace]() se encuentra el vídeo del Turtlebot en funcionamiento
+En el siguiente [Enlace](https://www.youtube.com/watch?v=uEgDbSsNcSA) se encuentra el vídeo del Turtlebot en funcionamiento
