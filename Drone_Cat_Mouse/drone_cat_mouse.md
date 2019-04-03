@@ -9,4 +9,10 @@ El objetivo de esta práctica es conseguir que el drone gato (negro) siga al dro
 El hardware disponible en este drone se desglosa de la siguiente manera:
 
 ### Sensores:
-El drone dispone de dos cámaras. Una de ellas situada en la parte frontal y mirando hacia el frente y la otra que se sitúa en la zona ventral del drone y que apunta hacia el suelo.
+El drone dispone de dos cámaras. Una de ellas situada en la parte frontal y mirando hacia el frente y la otra que se sitúa en la zona ventral del drone y que apunta hacia el suelo. Sin embargo, para la realización del ejercicio sólo se usa la cámara frontal.
+
+### Actuadores:
+Como actuadores se encuentran los motores de las hélices, los cuales proporcionan al drone la movilidad.
+
+## Software
+
