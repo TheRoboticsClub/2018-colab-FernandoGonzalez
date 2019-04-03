@@ -19,4 +19,9 @@ El software se basa en un sistema reactivo implementando un control proporcional
 
 **1. Análisis de la Imagen:** En cada iteración del bucle, se captura una imagen de la cámara frontal y se le aplica un filtro de color rojo (color del drone ratón) para posteriormente calcular su centro y su área.
 
-**2. Toma de Decisiones:** Con el valor del centro ya calculado, podremos corregir la posición del drone en función del error que presente dicho centro con el centro real de la imagen tanto en *x* como en *y*.
+**2. Toma de Decisiones:** Con el valor del centro ya calculado, podremos corregir la posición del drone en función del error que presente dicho centro con el centro real de la imagen tanto en *x* como en *y*. De esta forma podremos comandar a nuestro drone que gira a la derecha o izquierda y que suba o baje. 
+
+En relación con acercarse o alejarse del drone ratón, esto lo haremos teniendo en cuenta el área también calculada previamente. Si el área es muy grande querrá decir que el ratón está demasiado cerca, y si es más pequeña querrá decir que se encuentra más lejos. De esta manera podemos controlar el avance o retroceso del drone gato.
+
+## Apoyo Visual:
+En el siguiente [enlace](https://www.youtube.com/watch?v=uiK6WXPU_VQ) se encuentra un vídeo de la realización del ejercicio, en el cual se obtiene una puntuación de 761 puntos.
