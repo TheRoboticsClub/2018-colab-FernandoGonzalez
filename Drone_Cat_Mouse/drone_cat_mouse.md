@@ -15,4 +15,8 @@ El drone dispone de dos cámaras. Una de ellas situada en la parte frontal y mir
 Como actuadores se encuentran los motores de las hélices, los cuales proporcionan al drone la movilidad.
 
 ## Software
+El software se basa en un sistema reactivo implementando un control proporcional. Por ser reactivo, todo el programa se ejecuta en bucle infinito. A continuación procedo a analizar las dos partes más importantes de la algoritmia:
 
+**1. Análisis de la Imagen:** En cada iteración del bucle, se captura una imagen de la cámara frontal y se le aplica un filtro de color rojo (color del drone ratón) para posteriormente calcular su centro y su área.
+
+**2. Toma de Decisiones:** Con el valor del centro ya calculado, podremos corregir la posición del drone en función del error que presente dicho centro con el centro real de la imagen tanto en *x* como en *y*.
