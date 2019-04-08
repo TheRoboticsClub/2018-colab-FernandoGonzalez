@@ -1,0 +1,3 @@
+float32 leftUSDist
+float32 frontUSDist
+float32 rightUSDist
