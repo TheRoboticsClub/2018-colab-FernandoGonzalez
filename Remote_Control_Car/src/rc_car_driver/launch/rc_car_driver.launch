@@ -1,0 +1,6 @@
+<launch>
+
+	<node pkg="rc_car_driver" type="ir_data_publisher.py" name="IR_Data_Publisher" />
+	<node pkg="rc_car_driver" type="us_data_publisher.py" name="US_Data_Publisher" />
+
+</launch>
