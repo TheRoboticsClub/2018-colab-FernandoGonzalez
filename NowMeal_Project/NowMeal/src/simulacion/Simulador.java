@@ -7,17 +7,17 @@ import gestionpedidos.pedido.Cliente;
 import gestionpedidos.pedido.PlatoComida;
 import gestionpedidos.pedido.Pedido;
 import gestionpedidos.pedido.Restaurante;
-import java.util.ArrayList;
+import java.util.Vector;
 
 public class Simulador {
 	private GestionReparto gestor;
 	private Mapa mapa;
-	private ArrayList<Pedido> pedidosPendientes;
+	private Vector<Pedido> pedidosPendientes;
 
 	public Simulador(GestionReparto gestor, Mapa mapa){
 		this.gestor = gestor;
 		this.mapa = mapa;
-		this.pedidosPendientes = new ArrayList<>();
+		this.pedidosPendientes = new Vector<>();
 	}
 
 	// 0 2

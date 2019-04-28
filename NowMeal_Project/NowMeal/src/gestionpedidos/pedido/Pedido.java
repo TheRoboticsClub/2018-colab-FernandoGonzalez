@@ -12,19 +12,49 @@ public class Pedido {
 	private double peso;
 	
 	public Pedido(Cliente cliente, PlatoComida[] comidas, Restaurante restaurante) {		
-		//TO-DO
+		//Constructor
+		this.cliente = cliente;
+		this.comidas = comidas;
+		this.restaurante = restaurante;
+		this.calcularImporte(this.comidas);
+		this.calcularPeso(this.comidas);
+	}
+	
+	private void calcularImporte(PlatoComida[] comidas) {
+		int size = comidas.length; //Guardo la longitud del array
+		double precio = 0.0;
+		for(int i = 0; i < size; i++) {
+			precio = precio + comidas[i].getPrecio();
+		}
+		this.importe = precio;
+	}
+	
+	private void calcularPeso(PlatoComida[] comidas) {
+		int size = comidas.length; //Guardo la longitud del array
+		double peso = 0.0;
+		for(int i = 0; i < size; i++) {
+			peso = peso + comidas[i].getPeso();
+		}
+		this.peso = peso;
 	}
 
 	
 	public double getPeso(){
-		//TO-DO
-		return 0;
+		//Devuelve el peso total de los platos de comida
+		return this.peso;
 	}
 	
 	
 	public double coste(Transporte transporte){
-		//TO-DO
-		return 0;
+		//Devuelve el coste del pedido
+		//1.Calculo el coste del transporte desde su ubicacion a la del restaurante
+		
+		double coste1 = this.transporte.coste(this.restaurante.getCodigo());
+		
+		//2.Calculo el coste del transporte desde el restaurante al cliente
+		double coste2 = this.transporte.coste(this.restaurante.getCodigo(),this.cliente.getCodigo());
+		
+		return this.importe + coste1 + coste2;
 	}
 	
 	// CÓDIGO DE APOYO

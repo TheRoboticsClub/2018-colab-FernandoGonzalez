@@ -21,6 +21,7 @@ import gestionpedidos.transportes.FurgonetaPropia;
 import gestionpedidos.transportes.FurgonetaSubcontratada;
 import gestionpedidos.transportes.Moto;
 import gestionpedidos.transportes.Transporte;
+import java.util.*;
 
 public class AtributosDeclaradosTest {
 	
@@ -144,7 +145,7 @@ public class AtributosDeclaradosTest {
 	public void testAtributosGestionRepartoLocal() {
 		Class<?> className = GestionRepartoLocal.class;
 		String[] attrNames = {"motosDisponibles", "furgonetasDisponibles", "pedidosEsperandoMoto", "pedidosEsperandoFurgoneta"};
-		Type[] attrTypes = {list.ArrayList.class, list.ArrayList.class, queues.NaiveQueue.class, queues.NaiveQueue.class};
+		Type[] attrTypes = {ArrayList.class, ArrayList.class, queues.NaiveQueue.class, queues.NaiveQueue.class};
 		Type[] attrSpecialization = {Moto.class, 
 								Furgoneta.class, 
 								Pedido.class, 
