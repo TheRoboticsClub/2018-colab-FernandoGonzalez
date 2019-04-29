@@ -4,11 +4,12 @@ import gestionpedidos.mapa.Mapa;
 
 public class FurgonetaSubcontratada extends Furgoneta {
 	
-	private final double eurosPKm = 1.0;
+	double eurosPKm;
 	private final double MaxTara = 1000.0; //Tara maxima. Se usa en el metodo "coste"
 	
-	public FurgonetaSubcontratada(String codigo, Mapa mapa, float tara) {
+	public FurgonetaSubcontratada(String codigo, Mapa mapa, double tara) {
 		super(codigo, mapa, tara);
+		this.eurosPKm = 1.0;
 	}
 	
 	public double coste(String codIni, String codFin) {
@@ -25,6 +26,10 @@ public class FurgonetaSubcontratada extends Furgoneta {
 		}
 		
 		return resultado;
+	}
+	
+	public void setEurosPKm(double euros) {
+		this.eurosPKm = euros;
 	}
 
 }

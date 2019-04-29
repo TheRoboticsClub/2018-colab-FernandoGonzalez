@@ -4,12 +4,13 @@ import gestionpedidos.mapa.Mapa;
 
 public class FurgonetaPropia extends Furgoneta {
 	
-	private final double velocidadMedia = 30.0;
+	double velocidadMedia;
 	private final double EUROS_P_HORA = 40.0;
 	private final double MaxTara = 500.0; //Tara maxima. Se usa en el metodo "coste"
 	
-	public FurgonetaPropia(String codigo, Mapa mapa, float tara) {
+	public FurgonetaPropia(String codigo, Mapa mapa, double tara) {
 		super(codigo, mapa, tara);
+		this.velocidadMedia = 30;
 	}
 	
 	public double coste(String codIni, String codFin) {
@@ -26,6 +27,10 @@ public class FurgonetaPropia extends Furgoneta {
 		}
 		
 		return resultado;
+	}
+	
+	public void setVelocidadMedia(double vel) {
+		this.velocidadMedia = vel;
 	}
 
 }
