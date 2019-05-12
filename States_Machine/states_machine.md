@@ -2,9 +2,9 @@
 The target of this exercise is to create a states machine. The behavior of the robot will be go forward untill it sees my hand.
 When robot sees my hand, it will go backward and then, it will turn. So, we have three states:
 
-* *Go Forward*
-* *Go Backward*
-* *Turning*
+* *Go Forward:* Robot goes forward.
+* *Go Backward:* Robot goes backward.
+* *Turning:* Robot turns randomly.
 
 ## Program Explanation:
 This robot is programmed following an iterative structure, so it have an infinite loop like that:
