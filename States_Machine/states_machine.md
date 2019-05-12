@@ -6,7 +6,7 @@ When robot sees my hand, it will go backward and then, it will turn. So, we have
 * *Go Backward*
 * *Turning*
 
-## rogram Esplanation:
+## Program Explanation:
 This robot is programmed following an iterative structure, so it have an infinite loop like that:
 ```
 while(True):
