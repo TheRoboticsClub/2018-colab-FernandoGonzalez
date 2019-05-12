@@ -25,4 +25,4 @@ where *evaluateConditions()* takes care of change the current state if it is nec
 code depending of the current state.
 
 ## Visual Example:
-[here](https://www.youtube.com/watch?v=osfcSLC7BQg) you can find a video where the robot behavior is shown.
+[Here](https://www.youtube.com/watch?v=osfcSLC7BQg) you can find a video where the robot behavior is shown.
