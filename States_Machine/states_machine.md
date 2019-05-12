@@ -14,7 +14,7 @@ while(True):
 ```
 Inside the loop, different conditions are evaluated. Each condition will cause that current state changes. On this wqay, our structur will be like that:
 
-´´´
+```
 while(True):
   #statements
   evaluateConditions()
@@ -24,4 +24,5 @@ while(True):
 where *evaluateConditions()* takes care of change the current state if it is necessary, and *runState()* have to run the correct 
 code depending of the current state.
 
-## Visual Example
+## Visual Example:
+[here](https://www.youtube.com/watch?v=osfcSLC7BQg) you can find a video where the robot behavior is shown.
