@@ -1,0 +1,33 @@
+p{
+  font-style: normal;
+  color: rgb(5, 20, 112);
+}
+
+/* Defino el contenedor principal */
+.main_container{
+  background-color: rgb(97, 170, 223);
+  margin: 0%;
+  margin-top: 0%;
+  padding: 0;
+}
+.menu_container{
+  /*background-color: rgb(255, 255, 102);*/
+  height: 50px;
+  margin-left: 50%;
+  margin-bottom: 0%;
+  position: relative;
+  padding: 0;
+  color: rgb(255, 102, 102);
+  font-size: 24;
+  font-weight: bold;
+}
+
+ul.horizontal{
+margin:0;
+padding:0;
+}
+ul.horizontal li{
+display:block;
+float:left;
+padding:0 10px;
+}
