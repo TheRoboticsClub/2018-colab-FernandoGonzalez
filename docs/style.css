@@ -1,25 +1,52 @@
 p{
   font-style: normal;
-  color: rgb(5, 20, 112);
+  color: rgb(6, 246, 61);
 }
 
 /* Defino el contenedor principal */
-.main_container{
-  background-color: rgb(97, 170, 223);
+#main_container{
+  /*background-color: rgb(42, 153, 254);*/
   margin: 0%;
-  margin-top: 0%;
+  margin-top: 5px;
   padding: 0;
 }
+/*  contenedor de la informacion personal  */
+#main_container .info_container{
+  position: absolute;
+  float: left;
+  width: 30%;
+  padding-top: 0px;
+  margin-left: 0%;
+  margin-right: 80%;
+  /*background-color: rgb(186, 58, 64);*/
+  text-align: center;
+}
+#main_container .description{
+  position: relative;
+  float: right;
+  width: 70%;
+  padding-top: 0px;
+  margin-right: 0%;
+  margin-left: 45%;
+  background-color: rgb(42, 153, 254);
+  text-align: center;
+}
+
 .menu_container{
   /*background-color: rgb(255, 255, 102);*/
   height: 50px;
-  margin-left: 50%;
+  margin-left: 45%;
   margin-bottom: 0%;
   position: relative;
   padding: 0;
   color: rgb(255, 102, 102);
   font-size: 24;
   font-weight: bold;
+}
+.separator{
+  height: 2px;
+  background-color: rgb(17, 64, 171);
+  margin: 0%;
 }
 
 ul.horizontal{
