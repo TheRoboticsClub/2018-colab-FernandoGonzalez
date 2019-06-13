@@ -10,27 +10,76 @@
 
   <body>
 
-    <div class="menu_container">
-      <ul class="horizontal">
-      	<li><a href="#">Home</a></li>
-      	<li><a href="#">My Projects</a></li>
-      </ul>
+    <main_menu>
+      <Logo>
+        <img src="jderobot_logo.png" width="120" height="120">
+      </Logo>
 
+      <Home>
+        Home
+      </Home>
+
+      <About_Me>
+      <a href="#about_me">About Me</a>
+      </About_Me>
+
+      <Links>
+        My Projects
+      </Links>
+
+      <Contact>
+        Contact
+      </Contact>
+
+      <Searcher>
+        <searcher_img>
+          <img src="searcher_img.png" width="40" height="40">
+        <searcher_img>
+
+        <searcher_box>
+
+          <input type="search" id="mySearch" name="q" placeholder="Search the site..." required>
+          <button>Search</button>
+
+        </searcher_box>
+
+      </Searcher>
+
+    </main_menu>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+       <div class="numbertext">1 / 2</div>
+       <img src="myself_photo.jpg" style="width:100%">
+       <!--<div class="text">Caption Text</div>-->
+     </div>
+
+     <div class="mySlides fade">
+       <div class="numbertext">2 / 2</div>
+       <img src="slider2.jpeg" style="width:100%">
+       <!--<div class="text">Caption Two</div>-->
+     </div>
+
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <div class="separator">
-    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
 
-    <div id="main_container">
-      <div class="info_container">
-        <h2>Info container</h2>
-        <img src="myself_photo.jpg" width=95% height=95%>
-      </div>
-
-      <div class="description">
-        <p>Aqui va mi descripcion</p>
-      </div>
-    </div>
+      function showSlides() {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+       slideIndex++;
+       if(slideIndex > slides.length) {slideIndex = 1}
+       slides[slideIndex-1].style.display = "block";
+       setTimeout(showSlides,5000);
+      }
+    </script>
 
   </body>
 

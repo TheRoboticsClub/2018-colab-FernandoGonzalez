@@ -1,60 +1,124 @@
-p{
-  font-style: normal;
-  color: rgb(6, 246, 61);
-}
 
-/* Defino el contenedor principal */
-#main_container{
-  /*background-color: rgb(42, 153, 254);*/
-  margin: 0%;
-  margin-top: 5px;
-  padding: 0;
-}
-/*  contenedor de la informacion personal  */
-#main_container .info_container{
-  position: absolute;
-  float: left;
-  width: 30%;
-  padding-top: 0px;
-  margin-left: 0%;
-  margin-right: 80%;
-  /*background-color: rgb(186, 58, 64);*/
+/* MAIN MENU */
+main_menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: stretch;
+  height: 10%;
   text-align: center;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 22;
 }
-#main_container .description{
-  position: relative;
-  float: right;
-  width: 70%;
-  padding-top: 0px;
-  margin-right: 0%;
-  margin-left: 45%;
-  background-color: rgb(42, 153, 254);
-  text-align: center;
+main_menu a{
+  color: black;
+  text-decoration:none;
 }
 
-.menu_container{
-  /*background-color: rgb(255, 255, 102);*/
-  height: 50px;
-  margin-left: 45%;
-  margin-bottom: 0%;
-  position: relative;
-  padding: 0;
-  color: rgb(255, 102, 102);
-  font-size: 24;
-  font-weight: bold;
-}
-.separator{
-  height: 2px;
-  background-color: rgb(17, 64, 171);
-  margin: 0%;
+main_menu > Logo{
+  order: 1;
+  margin-left: 5%;
 }
 
-ul.horizontal{
-margin:0;
-padding:0;
+main_menu > Home{
+  margin-top: 2%;
+  margin-left: 15%;
+  order: 2;
 }
-ul.horizontal li{
-display:block;
-float:left;
-padding:0 10px;
+main_menu > About_Me{
+  margin-top: 2%;
+  margin-left: 5%;
+  order: 3;
+}
+main_menu > Links{
+  margin-top: 2%;
+  margin-left: 5%;
+  order: 4;
+}
+
+main_menu > Contact{
+  margin-top: 2%;
+  margin-left: 5%;
+  order: 4;
+}
+
+main_menu > Searcher{
+  margin-top: 2%;
+  margin-left: 8%;
+  order: 5;
+}
+main_menu > Searcher > searcher_img{
+  display: flex;
+  flex-direction: row;
+  order: 1;
+}
+main_menu > Searcher > searcher_box{
+  display: flex;
+  flex-direction: row;
+  order: 2;
+}
+
+/* SLIDER */
+.slideshow-container{
+ max-width: 1000px;
+ position:relative;
+ margin-top: 2%;
+ margin-left: 20%;
+ margin-right: 20%;
+}
+.mySlides{
+ display:none;
+}
+.prev, .next{
+ cursor:pointer;
+ position:absolute;
+ top:50%;
+ width:auto;
+ margin-top:-22px;
+ padding:16px;
+ color:blue;
+ font-weight:bold;
+ font-size:18px;
+ transition:0.6s ease;
+ border-radius:0 3px 3px 0;
+}
+.next{
+ right:0;
+ border-radius:3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+ background-color:rgba(0,0,0,0.8);
+}
+.text{
+ color:#f2f2f2;
+ font-size:18px;
+ padding:8px 12px;
+ position:absolute;
+ bottom:8px;
+ width:100%;
+ text-align:center;
+}
+
+.numbertext{
+ color:#f2f2f2;
+ font-size:12px;
+ padding:8px 12px;
+ position:absolute;
+ top:0;
+}
+.fade{
+ -webkit-animation-name:fade;
+ -webkit-animation-duration:1.5s;
+ animation-name:fade;
+ animation-duration:1.5s;
+}
+
+@-webkit-keyframes fade{
+ from{opacity:.4}
+ to{opacity:1}
+}
+
+@keyframes fade{
+ from{opacity:.4}
+ to{opacity:1}
 }
