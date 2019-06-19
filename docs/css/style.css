@@ -30,7 +30,7 @@ main_menu > About_Me{
   margin-left: 5%;
   order: 3;
 }
-main_menu > Links{
+main_menu > my_projects{
   margin-top: 2%;
   margin-left: 5%;
   order: 4;
@@ -58,11 +58,26 @@ main_menu > Searcher > searcher_box{
   order: 2;
 }
 
+contact_form{
+  display: flex;
+  margin-left: 17%;
+  margin-right: 15%;
+  margin-top: 5%;
+  width: 62%;
+  flex-direction: column;
+}
+contact_form h1{
+  color: blue;
+}
+contact_form p{
+  font-size: 18px;
+}
+
 /* SLIDER */
 .slideshow-container{
  max-width: 1200px;
  position:relative;
- margin-top: 2%;
+ margin-top: 5%;
  margin-left: 15%;
  margin-right: 15%;
 }
@@ -129,7 +144,7 @@ description{
   display: flex;
   flex-direction: column;
   margin-top: 3%;
-  margin-left: 16%;
+  margin-left: 17%;
   margin-right: 15%;
   width: 62%;
 }

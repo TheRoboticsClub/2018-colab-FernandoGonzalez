@@ -5,12 +5,9 @@
   </title>
 
   <head>
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
-  <body>
-
-    <main_menu>
+    <main_menu style="width: 100%; background-color: white; position:fixed; top: 0px; z-index: 50;">
       <Logo>
         <img src="jderobot_logo.png" width="120" height="120">
       </Logo>
@@ -23,12 +20,12 @@
       <a href="#about">About Me</a>
       </About_Me>
 
-      <Links>
+      <my_projects>
         My Projects
-      </Links>
+      </my_projects>
 
       <Contact>
-        Contact
+        <a href="#contact">Contact</a>
       </Contact>
 
       <Searcher>
@@ -46,17 +43,20 @@
       </Searcher>
 
     </main_menu>
+  </head>
+
+  <body>
 
     <div class="slideshow-container">
       <div class="mySlides fade">
        <div class="numbertext">1 / 2</div>
-       <img src="myself_photo.jpg" style="width:100%">
+       <img src="myself_photo.jpg" style="width:100%; height:70%;">
        <!--<div class="text">Caption Text</div>-->
      </div>
 
      <div class="mySlides fade">
        <div class="numbertext">2 / 2</div>
-       <img src="slider2.jpeg" style="width:100%">
+       <img src="slider2.jpeg" style="width:100%; height:70%;">
        <!--<div class="text">Caption Two</div>-->
      </div>
 
@@ -81,16 +81,34 @@
       }
     </script>
 
-    <description>
+    <description id="about">
       <h1 class="centrado">About Me</h1>
-      <p class="centrado" id="about">
+      <p class="centrado" >
         I am a Telematic Engineer student at Universidad Rey Juan Carlos.<br><br>
+
         I am a member of "The robotics Club" and "Robotech" robotics
         asociations and JdeRobot developer.<br>
+
         At this moment, I am working on Robotics learning at intitutes with a little robot
-        named PiBot.
+        named PiBot.<br>
+
+        You can see everything I work and other thing I worked in my
+        <a href="https://github.com/fgonzalezr1998" target="_blank">Github</a>
       </p>
     </description>
+
+    <contact_form id="contact">
+      <h1 class="centrado">Contact</h1>
+
+      <form class="centrado" name="form1" method="post" action="mailto:fergonzaramos@yahoo.es">
+        <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre"><br />
+        <label for="email">Email: </label><input type="text" name="nombre" id="email"><br />
+        Write your message<br />
+        <textarea id="opinion" name="opinion"></textarea><br />
+        <input type="submit" name="Submit" value="Enviar">
+      </form>
+
+    </contact_form>
 
   </body>
 
