@@ -35,6 +35,41 @@ main_menu > my_projects{
   margin-left: 5%;
   order: 4;
 }
+/* PESTANAS DESPLEGABLES */
+main_menu > my_projects *{margin:0;padding:0;box-sizing:border-box;}
+main_menu > my_projects nav a{
+      text-decoration:none;
+      color:inherit;
+      }
+
+main_menu > my_projects nav li{
+  display:inline-block;
+  width:150px;
+  height:30px;
+  background-color: white;
+  border:1px solid white;
+  text-align:center;
+  color: black;
+  position:relative;
+}
+
+main_menu > my_projects nav li:hover{
+  background-color:#1c97f1;
+  color:#fff;
+}
+
+main_menu > my_projects nav li>ul{
+  display:none;
+}
+
+main_menu > my_projects nav li:hover>ul{
+  display:block;
+  position:absolute;
+  top:30px;
+  left:0px;
+}
+
+/* MENU CONT. */
 
 main_menu > Contact{
   margin-top: 2%;
@@ -61,8 +96,9 @@ main_menu > Searcher > searcher_box{
 /* MY PROJECTS */
 projects_place{
   flex-direction: column;
-  align-items: center;
-  max-width: 80%
+  width: 62%;
+  margin-left: 17%;
+  margin-right: 15%;
 }
 
 projects_place h1{
@@ -221,11 +257,4 @@ description p{
 }
 .centrado{
   text-align: center;
-}
-
-.text_top{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    text-align: center;
 }
