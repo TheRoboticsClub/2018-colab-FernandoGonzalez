@@ -7,6 +7,8 @@ que se encontrarán en la trayectoria de nuestro coche.<br>
 Para ello, se requiere la implementación del algoritmo de Navegación Local **VFF**, el cual
 se detalla más adelante.
 
+[Imagen](https://github.com/TheRoboticsClub/2018-colab-FernandoGonzalez/blob/master/docs/obstacle_avoidance.png)
+
 ## Hardaware
 
 ### Sensores:
